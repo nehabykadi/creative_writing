@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://www.skagitriverpoetry.org/wp-content/uploads/2016/02/students-at-the-heart-skagit-river-poetry-2.png");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT ME</a>
+      <a href="#prose" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROSE</a>
+      <a href="#poem" class="w3-bar-item w3-button"><i class="fa fa-th"></i> POETRY</a>
+      <a href="#likes" class="w3-bar-item w3-button"><i class="fa fa-th"></i> FAVORITES</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Poetry/Prose</span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Categories</a></p>
+  </div>
+
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">All Pieces</h3>
+  <p class="w3-center w3-large">Categories</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-envelope-o w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Prose</p>
+      <p>LOCK Short Story</p>
+      <p>26 Sentence Story</p>
+      <p>Finding Forrester</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-envelope w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Poetry</p>
+      <p>List Poems</p>
+      <p>Polar Opposites</p>
+      <p></p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-envelope-square w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Favorites</p>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE AUTHOR</h3>
+
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+
+        <div class="w3-center w3-container">
+          <h3>Neha Ramachandra</h3>
+          <p class="w3-opacity">Author</p>
+
+          <p><button id="contact" class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact if any issues</button></p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="prose">
+  <h3 class="w3-center">Prose Pieces</h3>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="https://jakekuyser.files.wordpress.com/2013/07/abc-z.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<b>High School Horror</b>
+      <p>
+      As soon as she was hit with the realization that he was never coming back, she knew that there would be no happy ending for her. Backtrack for a moment, her name was Zoey, the classic American teenager with her head in the clouds dreaming about him. Cody Williams was the classic high-school jock that had everybody wrapped around his finger but he wasn’t perfect. Derek was Cody’s father and let’s just say he wasn’t even close to being father of the year, but even so Cody was still the kindest person on campus. Exhausted after playing football afterschool, Cody went to go sit down next to Zoey. Flustered as Zoey was she calmly made conversation with Cody asked if he wanted to go to a movie on Friday and to her surprise he said yes! Going to the movies was the easy part but nobody could have expected what would happen next. Halfway home, the two of them started to get lost and went up to an old house to ask for directions. Inside the old house seemed to be something rocking on the chair so Zoey and Cody knocked on the front door. Just barely, the two of them heard the faintest creak coming from inside and the door swung open. Knowing that something bad was going to happen shivers were sent down both of their spines. Lingering for the longest time, they finally entered the house trying to see if the owner was inside. Many people would think that it was a bad idea to go into that house if it was abandoned but at that point Zoey and Cody were desperate for directions since it was already past their curfew. Nobody was inside so Cody decided to look for somebody else to ask outside. Other than a confused old man with a name tag reading Xavier there was nobody outside so Cody decided to take his chances with the confused man rather than in a creepy old house. Perhaps the fear was starting to get to Zoey as well because not soon after she started to speed walk toward the door. Quickly, Cody exited the house with Zoey not far behind but suddenly the door slammed shut before Zoey could escape. Restlessly, Zoey started frantically shaking the door knob, pounding on the door and yelling for Cody but there was no reply. She thought that he had just gone to get help but after minutes went by she lost hope and started to look for a way out herself. There was a cracked window that was easily breakable with a little force so Zoey backed into a corner, found a heavy knickknack and threw it as hard as she could at the window and it worked! Underneath the window was a pile of glass shards but Zoey still ran to jump through the window but then she heard something. “Veronica,” the voice said, “come back to me.” Without taking a moment to listen closer Zoey jumped out of the window and ran as far away as she could towards Xavier, the old man. Xavier had a warm smile on his face when Zoey came up and asked where Cody was. “You’re her...” the old man said while pausing and sighing, “Cody told me to tell you that he can’t do this anymore and you deserve better.” Zoey had tears running down her face but she understood and went on with her life never forgetting that day.
+      </p>
+">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQixJ4JSFxE_BzgK4ETbIR3TCTR6Rh80uqe1mgCrJpnYL14QkeA" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<b>Escape</b>
+<p>
+  I’ve never given much thought to how dangerous the world really is because I have always been so consumed in my own problems. My mother died when I was young and even though we had all the money in the world I still felt unloved. My father was barely a father to me because he only knew how to punish me so I basically had to raise myself. My entire life I have never had a friend who truly loved me and my life was the opposite of a melodrama seen on television. I always felt alone and unwanted so when I was kidnapped I wasn’t afraid of leaving anyone behind.
+</p>
+<p>
+  The night that changed my life was cold and dark. There was no one but the K squad in front of me (Kelsie, Kenzie, and Kelly). I was just listening to my music, covering any bruises left from last night when a man came up behind me. I thought nothing of it at first but when he started to pick up his pace I knew something was wrong. In response, I started to pick up my pace and slowly went into a running speed. I wasn’t looking ahead and I crashed into Kelsie, Kenzie, and Kelly. The man came to a stop and pulled out four black body bags. He injected us with some kind of drug and as I started to close my eyes he started putting us in bags. I woke up in a small room with the same three girls. I sat up right away and saw that the other girls were petrified. I told them to calm down so that we could find a way out. They covered their mouths but I saw the tears running down their faces. I started to press the walls, searching for hollow knocks which could be a possible escape route, and I found one possible exit on the ceiling. I stood on the bed and measured how big the hollow area was. I determined that it was an air duct but before I could break open the wall a man came in. He had a camera and some rope. He tied us up and even though we tried to break free, there was no hope. Once we were tied up he set up the camera and pulled a gun from his pocket. The other girls were screaming for help but I stayed quiet. He pressed record and pointed the gun at our heads. He urged us to beg for help and show as much fear as we could.
+</p>
+<p>
+  While the other girls were uncontrollably screaming I calmly asked, “What do you want?” That’s when he spoke. He said, “I need a million dollar ransom from each of your families within 48 hours or else I will shoot each of you and leave your bodies someplace for your parents to find.” That’s when he turned the camera on himself and repeated the phrase, “48 hours or else your children die.” Then, he shut off the camera and exited the room with our hands and legs still tied up.
+</p>
+<p>
+  Kenzie was screaming while Kelsie and Kelly were struggling to break free. It was so annoying and I kept thinking to myself,  of all the girls I had to be stuck with, it had to be the ones with the least knowledge of common sense! I managed to escape by breaking my finger and slipping out of the restraints, with no help from them. Then, I quickly undid the girls’ restraints and the restraints on my feet. The door was still locked so I told the girls to look through the keyhole and make sure that the man wasn’t coming back while I opened the vent. When I opened it the vent was closed off and there was truly no escape. I quickly cleaned off the dust and closed the vent before I told the others that there was no other way out.
+</p>
+<p>
+  That’s when Kelsie came out and said, “What if we knock that man out when he comes in here next and escape through the front door?” I was astonished because that was the first good idea that any of these girls had since we had been here.
+</p>
+<p>
+  We came up with a plan and waited for him to come in. Kelsie and Kelly would be the distraction, Kenzie would be the look out, and I would knock him out with a metal rod I pulled from the bed. We didn’t have to wait long because within a few minutes he came in to tell us that we only had 30 minutes left to live, so we set the plan in motion.
+</p>
+<p>
+  I hid under the bed when he entered while Kelsie and Kelly drew his attention to the other side of the room. Slowly and carefully, I stepped out from under the bed and hit him round the head with the metal rod. He was out cold and we bolted out of the door into what seemed like a fortress. We chose to divide and conquer. I went to the right while the K squad went to the left. As I wandered around aimlessly, I found a locked window which could be easily broken with the metal rod I kept in my hand.  I called for the other girls but heard no response. I started to get worried as I called them again. I slowly surveyed my surroundings and walked in search of the girls. Not long after I heard a scream. This is when I started to run in hopes that they were still alive. As I turned the corner I ran into Kelsie. She was crying and stammering in fear. I told her to calm down and she finally said, “They’re dead! They’re dead! He wasn’t alone! We are not alone here! Run!” She pulled my arm and we started running in the other direction.
+</p>
+<p>
+  Once we reached the window, I hit it with all my strength and broke it on the first try. I was clearing off the glass when I heard it. “Where are you? Don’t you want to see your friends again? I can make it happen.” With fear running through our spines we climbed through the window and ran into a clearing not far off. We took a deep breath and discussed what we should do next. It wasn’t easy because Kelsie was in tears.
+</p>
+<p>
+  I tried to calm her down but that’s when I noticed that her hands were covered with blood. I assumed that it was from the glass but when I took a closer look, there were no cuts. It was someone else’s blood. It didn’t take long to realize that she was not all I thought she was. I asked her about it but she just denied it and tried to convince me that it was her blood. I started to back away and this is when she started to laugh. Her laugh made shivers run up and down my spine and made me shake in fear. As she came closer I saw the shine of a knife. I ran as fast as I could the other way but a man with a very large bat came at me. From my peripheral vision I could see the man that we knocked out coming at me with a very large machete. There was no escape for me. All I could think about was how nobody would miss me and I would die alone.
+</p>
+  While I was trying to find another way out I heard sirens. Apparently Kenzie’s, Kelly’s, and my dad all called the cops and found us right before the deadline was up. That’s when the killers all fled the scene and they were never found. After the cops investigated, we were told that the main kidnapper was the father of Kelsie and they have done this to many other kids, with rich families, before. I was lucky to survive unlike Kenzie and Kelly.
+</p>
+<p>
+  The next few weeks were full of despair, funerals, and lots of therapy but that situation made me think about how I had been wasting my life; so from that moment onwards I promised myself that I would be better. I promised that I would be a better daughter and a better friend. I would always have something to live for, so I would have more hope for the future.
+</p>
+">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXbHk80mgWFm7ocTIRk4XE9x7lyJlWOQ-1DxUDBhP7FARAuEX7" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="
+      <b>Loss</b>
+      <p>
+Everybody experiences loss at least once in their life because it’s just a part of living, and it is a feeling that never just comes and goes, so there are different approaches to this dreadful feeling.
+</p>
+There is nothing more devastating than the feeling of loss and regret. Once something is lost it leaves a hole in the heart and it almost seems impossible to repair or replace. There are only a few things that can diminish the pain of a loss, the most important of which is love and family. One way to deal with loss can take years to move on. When someone dies all a person really wants to do is make the world stop but instead it feels like the world is moving on without him/her. People stop caring and eventually people forget but not the person who had it the worst. When the world moved on way too fast it can be far too much for some people to bear but they can’t just stop time. Some people can find the strength to move on but some don’t. Those who don’t choose to live every day in isolation, putting up a wall with everyone he/she meets. This wall prevents him/her from getting hurt but it also prevents him/her from loving or feeling. Sometimes somebody will come to knock down that
+wall but if nobody is there that wall stays up forever. That wall becomes his/her only friend and he/she just has to go on with no meaning and no purpose. Everyone keeps telling him/her that it's been a lifetime and he or she has to let it go so he or she tries. It doesn’t work the first time so the person waits and tries again but after so long of being cut off, isolation just becomes second nature. It’s almost a cycle that never ends because he or she’s alone and nothing can change that.
+<p>
+<p>
+There is another way to handle loss. This kind of person doesn’t get knocked down by loss but gets stronger. They start to fight for what they believe in and fight to keep their family safe. They don’t hide, they thrive. They still mourn but they don’t stop their lives to drown in regret and self-hate. They don’t hide because they know that their loved one would want them to keep going and live their life. They move on and doesn’t let time leave them behind. This isn’t everyone because it entirely depends on the type of person.
+</p>
+<p>
+I have lost so many people in my life...some are still alive but they have betrayed me so much that they seem dead to me. I have lost my grandparents and some of my cousins and it took a while to move on because they meant the world to me. When someone means that much to you, there is no switch that can be used to turn off your emotions. I lost a lot of people in a single year and I went into a downward spiral for months. I resented myself for not spending enough time with them and this feeling of guilt and depression didn’t go away so I isolated myself. I became introverted and closed off. I had no friends but one day I chose to think differently. I started telling myself that everything happens for a reason and everyone’s time will come eventually. This is when I started to turn my life around. I started opening myself to new relationships but those months of being isolated stayed with me and I am still scared to put myself out there but I am better off than two years ago.
+</p>
+<p>
+Loss is complicated and deals with people in different ways, but no matter who it is they can get past it if they choose to do so.
+</p>
+      ">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://webstockreview.net/images/clipart-book-childrens-book.gif" style="width:100%; height:60%;" onclick="onClick(this)" class="w3-hover-opacity" alt='My pictures will not show here so this is the slideshow link: <a href="https://docs.google.com/presentation/d/1Xc5JqEbB9Jh7GfYa0nDxNo6lDrMKEMSiQHCOQStQIvQ/edit?usp=sharing">Lost in Space</a>'>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="https://1qjpt15fhlq3xjfpm2utibj1-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/better-meetings-speech-bubbles.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="
+      (All sit down on Dining Table)
+MOM:So...how was everyone’s day?
+<br>
+DAD AND GRANDMA:Good
+<br>
+PENELOPE:(Very quietly) I mean it was good
+<br>
+MOM:What happened, Penelope?
+<br>
+PENELOPE:(Very quietly) I might have gotten arrested.
+<br>
+GRANDMA:(Loudly)What?! I can’t hear you!
+<br>
+PENELOPE:(quickly) I got arrested
+<br>
+DAD: Your grandma is already deaf and none of us could understand you either! SAY IT CLEARLY!
+<br>
+PENELOPE: I got arrested.
+<br>
+MOM:(Yells) You what?!
+<br>
+GRANDMA: You got congested?
+<br>
+DAD:No mom! She got arrested!
+<br>
+GRANDMA:(Yells) WHAT!  (Calms down) See, I would never raise my children like that. I knew you shouldn’t have been a father.
+<br>
+DAD:Mom!
+<br>
+GRANDMA:What? It’s true!
+<br>
+MOM:How’d you get arrested?
+<br>
+PENELOPE: Well(Brief Pause) you know my boyfriend?
+<br>
+DAD: No (Brief Pause) (Yells) Boyfriend?! That’s the second one this month!
+<br>
+PENELOPE:Dad that’s not the point right now… (Dad scoffs) Anyway, he started to smuggle drugs to pay off his gambling debts and I just wanted to help him sort everything out so I did. 
+<br>
+MOM:Drugs?!
+<br>
+PENELOPE: Yeah. Then, out of nowhere, they started to check backpacks for anything suspicious in his class.He just got so nervous, so, to help him, I put all of the drugs into my backpack. 
+<br>
+GRANDMA:(Yelling) Why did you do that?! Are you dumb?! You stupid donkey!
+<br>
+PENELOPE:When I went to sell a necklace, that I stole, to a guy on Craigslist the cocaine fell out and it was just when a cop was walking by! (Close to tears)
+(Dad hyperventilates)
+<br>
+PENELOPE:Thankfully, my boyfriend bailed me out with all the money we got that week. 
+<br>
+MOM:So you weren’t at a sleepover yesterday? (Raising voice) You were in jail?!
+<br>
+PENELOPE:Yeah.
+<br>
+DAD: When do the lies end? (Disappointed look)
+<br>
+PENELOPE: I’m sorry...Also, it might not be the best moment to mention this but I haven’t been to school in a month.
+<br>
+MOM:What do you mean?!
+<br>
+PENELOPE:I’ve been ditching.
+<br>
+DAD:That’s it, I’m sending you to boarding school (Pause) in England.
+<br>
+PENELOPE:Boarding school?!
+<br>
+DAD:Yes… unless you want to go to military school.
+<br>
+PENELOPE:No, no boarding school sounds great! But why England?
+<br>
+DAD:Why are you questioning me right now?
+<br>
+PENELOPE:Sorry. You know what, England might be fun.
+<br>
+MOM:And in the meantime..you are completely cut off and you need to do community service.
+<br>
+PENELOPE:(Whiney Voice) Mom!
+<br>
+MOM:(Sassy Voice) Don’t Mom me. You brought this on yourself.
+<br>
+GRANDMA:Wait... boarding school and community service is all the punishment you get? If it were up to me I would leave your ass out on the streets.
+<br>
+MOM: Lucky for you, Penelope, your father and I are much more lenient.
+<br>
+PENELOPE:Lucky me I guess.
+<br>
+MOM:Well is that all that I have to hear from you today.
+<br>
+PENELOPE:I guess.
+<br>
+MOM:Good now go upstairs.
+<br>
+PENELOPE:Fine. (Starts to get up) One last thing though.
+<br>
+MOM:What?
+<br>
+PENELOPE:This was all just a prank...I never got arrested. (Proud Face)
+<br>
+DAD:(Sarcastically) Oh that’s so funny! (Seriously) You’re still going to boarding school thought.
+<br>
+PENELOPE:Dad! (Hits table)
+<br>
+DAD:Penelope! (Hits table)
+<br>
+PENELOPE:Did you just want to get rid of me?
+<br>
+DAD:(Obviously Sarcastic) No...Why would you ever think that?
+<br>
+PENELOPE:Rude.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjLtBViDR6We2FiCrOfw3DpI76vyxFw03PLELsM1Hk5IIMVQsI&s" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt='Here is the blog web page: <a href="blog_creative_writing.html">Blog.html</a>'>
+  </div>
+</div>
+
+
+<!-- Poetry -->
+
+<div class="w3-container" style="padding:128px 16px" id="poem">
+  <h3 class="w3-center">Poetry Pieces</h3>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="https://blogs.socsd.org/sfluger/files/2019/02/FoundPoems-23id8jq-300x212.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" 
+      alt="
+      <strong>Broken Family (50 word) </strong>
+      <br>
+      Mom promised, “Us forever”
+      <br>
+      Fun-loving grandmother comprised with dreams
+      <br>
+      Admired, independent maid
+      <br>
+      Fierce slave desperate for education
+      <br>
+      Clairvoyant owner demanding forever.
+      <br>
+      Secrets crippled relationships
+      <br>
+      Talent triumphed
+      <br>
+      Beatings aborted
+      <br>
+      College encouraged
+      <br>
+      Heartbreak avenged
+      <br>
+      Although, tremendous despair emerged
+      <br>
+      Maniacs orchestrated chaos
+      <br>
+      Ministers maimed in churches
+      <br>
+      Trapped in a slaughterhouse
+      <br>
+      Fossilized beginnings 
+      <br>
+      Uncertain finish
+      <br>
+      Betrayal offered
+      <br>
+      Forgotten family
+      <br>
+      Slick escape
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <strong>Abandonment (25 word)</strong>
+      <br>
+      Traitor…
+      <br>
+      Self-serving, powerful killer
+      <br>
+      Controlling insecurities
+      <br>
+      Memories fade
+      <br>
+      Darkness pulsing powerfully
+      <br>
+      Tears … 
+      <br>
+      Shooting … strangling … yelling 
+      <br>
+      collapsing… breathless
+      <br>
+      Remaining sunlight disappears
+      <br>
+      Abandoned brotherhood
+      <br>
+      Starting roots forgotten
+      <br>
+      ">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+</div>
+
+
+<!-- Favorites -->
+<div class="w3-container" style="padding:128px 16px" id="likes">
+  <h3 class="w3-center">My Favorites</h3>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+contact.onclick = function(){
+  alert("ramachandran@s.dcsdk12.org")
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
